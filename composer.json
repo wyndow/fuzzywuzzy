@@ -2,17 +2,26 @@
     "name": "gowili/wuzzy",
     "description": "Fuzzy string matching based on FuzzyWuzzy from Seatgeek",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Michael Crumm",
+        "email": "mike@crumm.net"
+      }
+    ],
     "require": {
+        "ext-mbstring": "*",
         "phpspec/php-diff": "^1.0"
     },
     "require-dev": {
         "phpspec/phpspec": "^2.2"
     },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Michael Crumm",
-            "email": "mike@crumm.net"
+    "autoload": {
+        "psr-4": {
+          "Gowili\\Wuzzy\\": "lib/"
         }
-    ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
 }
