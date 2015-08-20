@@ -1,6 +1,6 @@
 <?php
 
-namespace Gowili\Wuzzy;
+namespace Gowili\FuzzyWuzzy;
 
 class Fuzz
 {

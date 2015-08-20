@@ -1,6 +1,6 @@
 <?php
 
-namespace Gowili\Wuzzy\Diff;
+namespace Gowili\FuzzyWuzzy\Diff;
 
 class SequenceMatcher extends \Diff_SequenceMatcher
 {
