@@ -1,0 +1,14 @@
+extensions:
+  - PhpSpec\Extension\CodeCoverageExtension
+code_coverage:
+  format:
+    - html
+    - clover
+  output:
+    html:   spec/coverage
+    clover: spec/coverage/clover.xml
+suites:
+  fuzz_suite:
+    namespace:   Gowili\FuzzyWuzzy
+    psr4_prefix: Gowili\FuzzyWuzzy
+    src_path:    lib
