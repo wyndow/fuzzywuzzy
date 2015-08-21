@@ -1,0 +1,61 @@
+#!/usr/bin/env php
+<?php
+
+if (is_file($autoload = getcwd() . '/vendor/autoload.php')) {
+    require $autoload;
+} elseif (is_file($autoload = getcwd() . '/../../autoload.php')) {
+    require $autoload;
+}
+
+if (is_file($autoload = __DIR__ . '/../vendor/autoload.php')) {
+    require $autoload;
+} elseif (is_file($autoload = __DIR__ . '/../../../autoload.php')) {
+    require $autoload;
+} else {
+    fwrite(STDERR,
+        'You must set up the project dependencies, run the following commands:' . PHP_EOL .
+        'curl -s http://getcomposer.org/installer | php' . PHP_EOL .
+        'php composer.phar install' . PHP_EOL
+    );
+    exit(1);
+}
+
+if ($argc !== 3) {
+    fwrite(STDERR, 'USAGE: ' . $argv[0] . ' string1 string2' . PHP_EOL);
+    exit(1);
+}
+
+echo <<<EOT
+
+###################################################################
+#  ____|                      \ \        /                        #
+#  |    |   | _  / _  /  |   | \ \  \   /  |   | _  / _  /  |   | #
+#  __|  |   |   /    /   |   |  \ \  \ /   |   |   /    /   |   | #
+# _|   \__,_| ___| ___| \__, |   \_/\_/   \__,_| ___| ___| \__, | #
+#                       ____/                              ____/  #
+#                                                                 #
+# Fuzzy string matching like a boss.                              #
+###################################################################
+
+
+EOT;
+
+$s1 = $argv[1];
+$s2 = $argv[2];
+
+$fuzz = new Gowili\FuzzyWuzzy\Fuzz();
+
+echo 'Query: ' . $s1 . ' ==> ' . $s2 . PHP_EOL;
+echo '------' . PHP_EOL;
+echo 'Ratio: ' . $fuzz->ratio($s1, $s2) . PHP_EOL;
+echo 'Partial Ratio: ' . $fuzz->partialRatio($s1, $s2) . PHP_EOL;
+echo '------' . PHP_EOL;
+echo 'Token Sort Ratio: ' . $fuzz->tokenSortRatio($s1, $s2) . PHP_EOL;
+echo 'Token Sort Partial Ratio: ' . $fuzz->tokenSortPartialRatio($s1, $s2) . PHP_EOL;
+echo '------' . PHP_EOL;
+echo 'Token Set Ratio: ' . $fuzz->tokenSetRatio($s1, $s2) . PHP_EOL;
+echo 'Token Set Partial Ratio: ' . $fuzz->tokenSetPartialRatio($s1, $s2) . PHP_EOL;
+
+echo '------' . PHP_EOL;
+echo '------' . PHP_EOL;
+echo PHP_EOL;
