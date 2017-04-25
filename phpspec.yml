@@ -1,12 +1,3 @@
-extensions:
-  - PhpSpec\Extension\CodeCoverageExtension
-code_coverage:
-  format:
-    - html
-    - clover
-  output:
-    html:   spec/coverage
-    clover: spec/coverage/clover.xml
 suites:
   fuzzywuzzy_suite:
     namespace:   FuzzyWuzzy
