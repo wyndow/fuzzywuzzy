@@ -20,8 +20,10 @@ composer require wyndow/fuzzywuzzy
 
 ```php
 use FuzzyWuzzy\Fuzz;
+use FuzzyWuzzy\Process;
 
 $fuzz = new Fuzz();
+$process = new Process($fuzz); // $fuzz is optional here, and can be omitted.
 ```
 
 ### Simple Ratio
