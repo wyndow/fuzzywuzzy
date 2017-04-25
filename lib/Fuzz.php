@@ -1,6 +1,6 @@
 <?php
 
-namespace Gowili\FuzzyWuzzy;
+namespace FuzzyWuzzy;
 
 /**
  * A collection of fuzzy string matching algorithms, based on the SeatGeek

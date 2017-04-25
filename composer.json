@@ -1,5 +1,5 @@
 {
-    "name": "gowili/fuzzywuzzy",
+    "name": "wyndow/fuzzywuzzy",
     "description": "Fuzzy string matching based on FuzzyWuzzy from Seatgeek",
     "type": "library",
     "license": "MIT",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-          "Gowili\\FuzzyWuzzy\\": "lib/"
+          "FuzzyWuzzy\\": "lib/"
         }
     },
     "config": {

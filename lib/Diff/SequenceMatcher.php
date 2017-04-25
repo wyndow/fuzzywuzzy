@@ -1,6 +1,6 @@
 <?php
 
-namespace Gowili\FuzzyWuzzy\Diff;
+namespace FuzzyWuzzy\Diff;
 
 /**
  * Overloaded SequenceMatcher for constructor convenience.
