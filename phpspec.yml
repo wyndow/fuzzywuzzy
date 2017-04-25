@@ -8,7 +8,7 @@ code_coverage:
     html:   spec/coverage
     clover: spec/coverage/clover.xml
 suites:
-  fuzz_suite:
-    namespace:   Gowili\FuzzyWuzzy
-    psr4_prefix: Gowili\FuzzyWuzzy
+  fuzzywuzzy_suite:
+    namespace:   FuzzyWuzzy
+    psr4_prefix: FuzzyWuzzy
     src_path:    lib

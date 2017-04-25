@@ -15,7 +15,7 @@
     },
     "require-dev": {
         "phpspec/phpspec": "^2.2",
-        "henrikbjorn/phpspec-code-coverage": "~1.0.0"
+        "henrikbjorn/phpspec-code-coverage": "^2.1"
     },
     "autoload": {
         "psr-4": {
