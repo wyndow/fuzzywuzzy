@@ -1,6 +1,6 @@
 <?php
 
-namespace Gowili\FuzzyWuzzy;
+namespace FuzzyWuzzy;
 
 /**
  * Collection provides an array-like interface for working with a set of elements.

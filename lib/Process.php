@@ -1,6 +1,6 @@
 <?php
 
-namespace Gowili\FuzzyWuzzy;
+namespace FuzzyWuzzy;
 
 class Process
 {

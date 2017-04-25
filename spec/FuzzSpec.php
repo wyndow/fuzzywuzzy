@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Gowili\FuzzyWuzzy;
+namespace spec\FuzzyWuzzy;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -34,7 +34,7 @@ class FuzzSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('Gowili\FuzzyWuzzy\Fuzz');
+        $this->shouldHaveType('FuzzyWuzzy\Fuzz');
     }
 
     function it_returns_a_perfect_match_for_ratio()

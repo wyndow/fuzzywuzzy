@@ -1,6 +1,6 @@
 <?php
 
-namespace Gowili\FuzzyWuzzy;
+namespace FuzzyWuzzy;
 
 /**
  * Convenience methods for working with string values.
